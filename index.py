@@ -6,7 +6,7 @@ import tensorflow as tf
 import base64
 
 # Load TFLite model and allocate tensors
-interpreter = tf.lite.Interpreter(model_path="model_float16_quant.tflite")
+interpreter = tf.lite.Interpreter(model_path="model/model_float16_quant.tflite")
 interpreter.allocate_tensors()
 
 st.title("Image Classifier")

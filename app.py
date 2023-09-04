@@ -9,7 +9,7 @@ import base64
 app = Flask(__name__)
 
 # Load TFLite model and allocate tensors
-interpreter = tf.lite.Interpreter(model_path="model_float16_quant.tflite")
+interpreter = tf.lite.Interpreter(model_path="model/model_float16_quant.tflite")
 interpreter.allocate_tensors()
 
 @app.route('/', methods=['GET', 'POST'])
